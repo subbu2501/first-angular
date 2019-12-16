@@ -26,13 +26,13 @@ describe('HomeComponent', () => {
   it(`should have as title 'ng-unit-test'`, () => {
     const fixture1 = TestBed.createComponent(HomeComponent);
     const comp1 = fixture1.componentInstance;
-    expect(comp1.title).toEqual('ng-unit-test');
+    expect(comp1.title).toEqual('ng-unit-test-from-github');
   });
 
   it('should render title', () => {
     const fixture1 = TestBed.createComponent(HomeComponent);
     fixture1.detectChanges();
     const compiled = fixture1.debugElement.nativeElement;
-    expect(compiled.querySelector('span.title').textContent).toContain('ng-unit-test app is running!');
+    expect(compiled.querySelector('span.title').textContent).toContain('ng-unit-test-from-github app is running!');
   });
 });
